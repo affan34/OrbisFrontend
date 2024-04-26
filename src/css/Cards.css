@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+.cards-container{
+    display:flex;
+    width:80%;
+    height:30em;
+    background-color:white;
+    border-radius:10px;
+    margin-top:3em;
+    flex-direction:column;
+}
+.cards-image-container{
+    width:5em;
+    border-radius:50%;
+    height:5em;
+    background-color:silver;
+    margin-left:3em;
+   
+
+}
+.cards-image{
+   width:5em;
+    border-radius:50%;
+    height:5em;
+
+}
+
+.card-details-container{
+    display:flex;
+    flex-direction:row;
+    height:6em;
+    background-color:#506FEE;
+    width:100%;
+    border-radius:10px 10px 0px 0px;
+    align-items:center;
+    
+}
+.cards-info{
+    display:flex;
+    flex-direction:column;
+}
+.username{
+    margin-left:2em;
+    font-family: "Open Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+     font-variation-settings:
+       "wdth" 100;
+       color: black;
+
+}
+.date{
+    margin-left:3.5em;
+}
+.reaction-container{
+    width:100%;
+    height:5em;
+    /* background-color:blue; */
+    position:relative;
+    bottom:-20em;
+    border-radius: 0px 0px 10px 10px;
+    display:flex;
+    align-items: center;
+}
+.heart{
+    margin-left:3em;
+}

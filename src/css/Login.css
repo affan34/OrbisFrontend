@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+.login-container{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+
+}
+.login-graphics-container{
+    /* background-color:red; */
+    width:50em;
+    height:40em;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+.login-details-container{
+    /* background-color:yellow; */
+    width:50em;
+    height:40em;
+}
+.login-image{
+    width:40em;
+    
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    margin-top:5em;
+    margin-left:6em;
+    width:29em;
+    gap:0.3em;
+  
+    
+}
+.sansfont{
+    background-color:white;
+    font-family: "Open Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+     font-variation-settings:
+       "wdth" 100;
+       color: black;
+
+}
+h1{
+    margin-bottom:1.3em;
+}
+.container-gap{
+   margin-bottom :1.3em;
+}
+.input-size{
+    height:3em;
+    border-radius:10px;
+    border-color:rgb(221, 219, 219);
+    border-style:solid;
+    text-indent:1em;
+}
+.login-button{
+    height:3.7em;
+    background-color:#2F54EB;
+    color:white;
+    border-radius:16px;
+    border:0px solid #2F54EB;
+    cursor:pointer;
+    
+}
+.link{
+    color:#2F54EB;
+    text-decoration:none;
+}
+
+.typewriter h1 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size:1.5em;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      color: black;
+      /* font-size:1em; */
+   
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #2F54EB; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(37, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #2F54EB; }
+  }

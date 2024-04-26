@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+
+}
+.not-found-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    width:100%;
+
+}
+.not-found-details-container{
+    width:50em;
+    height:35em;
+    display:flex;
+    /* background-color:red; */
+    flex-direction:column;
+    align-items:center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    
+    
+}
+
+.not-found-details-container h4{
+    margin-top:6em;
+  
+    align-items:center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.not-found-details-container h1{
+    /* width:5em; */
+    text-align:center;
+   
+    align-items:center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.not-found-details-container h3{
+    width:20em;
+    text-align:center;
+    margin-bottom:3em;
+  
+    align-items:center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.not-found-button{
+    width:15em;
+    height:3.7em;
+    background-color:#2F54EB;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:16px;
+    gap:0.5em;
+   
+    align-items:center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+
+}
+
+
+
+
+.not-found-graphics-container{
+    width:50em;
+    height:35em;
+    display:flex;
+    /* background-color:blue; */
+}
+.not-found-image{
+    width:50em;
+}
