@@ -23,6 +23,7 @@ function App() {
 
 
   const {setUser,setIsAuthanticated,setLoading}=useContext(Context);
+  const [progress, setProgress] = useState(0)
   
 
    useEffect(()=>{
