@@ -58,6 +58,7 @@ const Register = () => {
        <div className="login-container">
         <div className="login-graphics-container">
         <img className="login-image" src="https://www.signiflow.com/media/wp-content/uploads/sites/2/2022/10/final-pic-melissa.gif"/>
+        
         <div className="typewriter-container">
 
         <div class="typewriter">
