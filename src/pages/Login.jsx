@@ -50,7 +50,7 @@ const Login = () => {
   return (
     <div className="login-container">
         <div className="login-graphics-container">
-        <img className="login-image"src="src/assets/icegif-140.gif"/>
+        <img className="login-image"src="assets/icegif-140.gif"/>
         
         
         </div>
