@@ -2,7 +2,20 @@ import React from 'react'
 import "../css/NotFound.css";
 import { NavLink } from 'react-router-dom';
 
-const NotFound = () => {
+const NotFound = ({setProgress}) => {
+
+  useEffect(()=>{
+    setProgress(40);
+    setTimeout(()=>{
+      setProgress(100);
+    },500);
+   
+  },[])
+
+
+
+
+
   return (
     <div className="not-found-container">
       <div className="not-found-details-container">

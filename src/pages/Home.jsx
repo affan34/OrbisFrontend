@@ -5,9 +5,20 @@ import { Navigate } from 'react-router-dom';
 import { Context } from '../main';
 
 
-const Home = () => {
+const Home = ({setprogress}) => {
   const {isAuthanticated}=useContext(Context);
 
+
+  useEffect(()=>{
+    setprogress(40);
+    setTimeout(()=>{
+      setprogress(100);
+    },500);
+   
+  },[])
+
+
+  
   if(!isAuthanticated) return <Navigate to="/login" />;
   return (
     <div className="home-container">

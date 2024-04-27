@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import axios from "axios";
 
 
-const Login = () => {
+const Login = ({setprogress}) => {
   const {isAuthanticated,setIsAuthanticated,loading,setLoading}= useContext(Context);
 
   const [email,setEmail] =useState("");
@@ -45,7 +45,13 @@ const Login = () => {
 
   }
   };
-
+  useEffect(()=>{
+    setprogress(40);
+    setTimeout(()=>{
+      setprogress(100);
+    },500);
+   
+  },[]);
 
   if(isAuthanticated) return <Navigate to="/" />;
   return (

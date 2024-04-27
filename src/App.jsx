@@ -44,7 +44,29 @@ function App() {
 
 
 
-
+  useEffect(()=>{
+    axios.interceptors.request.use(
+      config => {
+        setProgress(40);
+        setTimeout(()=>{
+          setProgress(100);
+        },500);
+        return config
+      },
+      error => {
+        Promise.reject(error)
+      }
+    )
+    axios.interceptors.response.use(
+      config => {
+        setProgress(0);
+        return config
+      },
+      error => {
+        Promise.reject(error)
+      }
+    )
+  },[]);
 
 
 
@@ -64,11 +86,16 @@ function App() {
     <>
     <Router>
    <Header/>
+   <LoadingBar
+        color='#2F54EB'
+        progress={progress}
+        onLoaderFinished={() => setProgress(0)}
+      />
    <Routes>
-   <Route path="/" element={<Home/>}/>
-   <Route path="/login" element={<Login/>}/>
-   <Route path="/register" element={<Register/>}/>
-   <Route path="*" element={<NotFound/>}/>
+   <Route path="/" element={<Home setprogress={setProgress}/>}/>
+   <Route path="/login" element={<Login setprogress={setProgress}/>}/>
+   <Route path="/register" element={<Register setprogress={setProgress}/>}/>
+   <Route path="*" element={<NotFound setprogress={setProgress}/>}/>
    </Routes>
    <Toaster/>
   <Footer/>
