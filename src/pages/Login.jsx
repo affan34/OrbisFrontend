@@ -6,6 +6,7 @@ import { useContext, useState } from "react";
 import { Context } from "../main";
 import toast from "react-hot-toast";
 import axios from "axios";
+import loginImage from './assets/icegif-140.gif';
 
 const Login = () => {
   const {isAuthanticated,setIsAuthanticated,loading,setLoading}= useContext(Context);
@@ -50,7 +51,7 @@ const Login = () => {
   return (
     <div className="login-container">
         <div className="login-graphics-container">
-        <img className="login-image"src="%PUBLIC_URL%/assets/icegif-140.gif"/>
+      <img className="login-image"src={loginImage}/>
         
         
         </div>
