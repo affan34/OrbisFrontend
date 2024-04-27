@@ -1,13 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "../css/NotFound.css";
 import { NavLink } from 'react-router-dom';
 
-const NotFound = ({setProgress}) => {
+const NotFound = ({setprogress}) => {
 
   useEffect(()=>{
-    setProgress(40);
+    setprogress(40);
     setTimeout(()=>{
-      setProgress(100);
+      setprogress(100);
     },500);
    
   },[])

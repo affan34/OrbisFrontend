@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import "../css/Home.css";
 import Cards from '../components/Cards';
 import { Navigate } from 'react-router-dom';
@@ -18,7 +18,7 @@ const Home = ({setprogress}) => {
   },[])
 
 
-  
+
   if(!isAuthanticated) return <Navigate to="/login" />;
   return (
     <div className="home-container">

@@ -2,7 +2,7 @@
 import "../css/Login.css";
 import { NavLink, Navigate } from 'react-router-dom';
 
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Context } from "../main";
 import toast from "react-hot-toast";
 import axios from "axios";
