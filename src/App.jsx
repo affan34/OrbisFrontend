@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import NotFound from "./pages/NotFound";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import {Context, server } from "./main";
 import LoadingBar from "react-top-loading-bar";
 
