@@ -6,7 +6,7 @@ import { useContext, useState } from "react";
 import { Context } from "../main";
 import toast from "react-hot-toast";
 import axios from "axios";
-import Registerimage  from "../assets/women.gif";
+
 
 
 const Register = () => {
@@ -57,7 +57,7 @@ const Register = () => {
     <div>
        <div className="login-container">
         <div className="login-graphics-container">
-        <img className="login-image" src={Registerimage}/>
+        <img className="login-image" src="/assets/women.gif"/>
         <div className="typewriter-container">
 
         <div class="typewriter">
