@@ -9,6 +9,7 @@ import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import { useContext, useEffect } from "react";
 import {Context, server } from "./main";
+import LoadingBar from "react-top-loading-bar";
 
 
 
