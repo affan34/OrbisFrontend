@@ -51,8 +51,8 @@ const Login = () => {
   return (
     <div className="login-container">
         <div className="login-graphics-container">
-      <img className="login-image"src="/assets/icegif-1400.gif"/>
-        
+      <img className="login-image" src="https://cdn.pixabay.com/animation/2022/12/01/17/03/17-03-11-60_512.gif"/>
+         
         
         </div>
         <div className="login-details-container">

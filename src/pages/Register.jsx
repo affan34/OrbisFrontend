@@ -57,7 +57,7 @@ const Register = () => {
     <div>
        <div className="login-container">
         <div className="login-graphics-container">
-        <img className="login-image" src="/assets/women.gif"/>
+        <img className="login-image" src=""/>
         <div className="typewriter-container">
 
         <div class="typewriter">
