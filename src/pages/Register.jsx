@@ -10,7 +10,7 @@ import axios from "axios";
 
 const Register = () => {
 
-  const {setIsAuthanticated,setLoading}= useContext(Context);
+  const {setIsAuthanticated,isAuthanticated,setLoading}= useContext(Context);
 
   const[name,setName] =useState("");
   const[password,setPassword]=useState("");
@@ -47,7 +47,7 @@ const Register = () => {
 
 
 
-   if(setIsAuthanticated) return <Navigate to="/" />
+   if(isAuthanticated) return <Navigate to="/" />
 
 
 
